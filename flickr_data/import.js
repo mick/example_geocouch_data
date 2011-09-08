@@ -12,7 +12,7 @@ flickr = JSON.parse(data);
 for(p in flickr.photos.photo){
     photo = flickr.photos.photo[p];
 
-    photo.geometry = {"type":"point",
+    photo.geometry = {"type":"Point",
                       "coordinates": [photo.longitude, photo.latitude]};
 
     // Save the url to the flickr image.
